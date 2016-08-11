@@ -54,17 +54,13 @@
         <!-- 高德地图的配置 -->
         <service android:name="com.amap.api.location.APSService" />
         <!-- 个人机 -->
-         <!--<meta-data-->
-         <!--android:name="com.amap.api.v2.apikey"-->
-         <!--android:value="b97b54920825966f75d07ba369f66af4"/>-->
+         <meta-data
+         android:name="com.amap.api.v2.apikey"
+         android:value="b97b54920825966f75d07ba369f66af4"/>
         <!-- 实习机 -->
         <!--<meta-data-->
             <!--android:name="com.amap.api.v2.apikey"-->
             <!--android:value="c50d08400efc84f0e6954c67d49dab49" />-->
-        <!-- 实习机发布 -->
-        <meta-data
-            android:name="com.amap.api.v2.apikey"
-            android:value="6eb4cf114e2bb26bcf66eda1cef7426a" />
 
         <activity
             android:name=".activity.AfterThreeDayWeatherActivity"
