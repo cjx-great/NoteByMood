@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/train_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <View
+        android:id="@+id/v"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dbdbdb"
+        android:layout_alignBottom="@id/train_input"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v"
+        android:weightSum="2">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/cancel"
+            style="@style/Material.Drawable.Ripple.Wave.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            app:rd_enable="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#dbdbdb"/>
+        <com.rey.material.widget.Button
+            android:id="@+id/sure"
+            style="@style/Material.Drawable.Ripple.Wave.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            app:rd_enable="true"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
